@@ -1,0 +1,16 @@
+/* Content First - Mobile First*/
+    /*General Rules*/
+            *{
+                box-sizing: border-box;
+                font-family: 'Raleway', 'segoe ui', 'calibri', sans-serif;
+            }
+            body,
+            h1,
+            h2,
+            h3{
+                margin: 0;
+             }
+/*Small Devices - Smartphones*/
+/*Medium Devices - Tablets*/
+/*large Devices - Desktop*/
+/*ExtraLarge - HD Desktop*/
