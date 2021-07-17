@@ -70,6 +70,12 @@
             <article>
                 <h3>Repository</h3>
                 <p>Lugar donde se almacenan los cambios identificados mediante las capturas de codigo en formato <strong>BLOB (Binary Large Object File)</strong>, utilizando como referencia para la creacion de dicha confirmacion datos como nombre de usuario, correo, título del mensaje, fecha, además de la fecha y hora en la que se emitió dicho commit. Cuando se generan estas confirmaciones también se asocia el commit anterior al último generado.</p>
+                <ul class="commands">
+                    <li><strong>git log</strong> Muestra el historial de cambios ordenados del ultimo al p rimero.</li>
+                    <li><strong>git diff &lt;ref</strong> Compara el Working Directory con la referencia de commit especificada.</li>
+                    <li><strong>git blame &lt;file</strong> Muestra el autor, la fecha y commit en el que se realizaron modificaciones dentro del archivo seleccionado.</li>
+                    <li><strong>git checkout &lt;ref</strong> Mueve el apuntador HEAD a la posición donde se encuentre el commit referencial.</li>
+                </ul>
             </article>
         </section>
     </main>
