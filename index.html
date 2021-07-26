@@ -90,6 +90,15 @@
                 <h3>BRANCH</h3>
                 <p>
                     Apuntador dinámico que se corresponde con el último commit dentro de una historia determinada, estos existen debido a que GIT funciona como un <em>grafo dirigido acíclico</em> y por lo tanto los commits apuntan solamente hacia sus ancestros y no reconocen las confirmaciones de cambios posteriores.
+                    <ul class="commands">
+                        <li><strong>git branch &lt;name></strong>Crea una rama con el nombre especificado, sin movernos en el historial.</li>
+                        <li><strong>git checkout -b &lt;branch></strong>Crea una rama con el nombre que indicamos y nos redirige hacia ella.</li>
+                        <li><strong>git branch</strong>Lista las ramas del repositorio, para ver las remotas o todas podemos usar los parámetros <em>-r -a </em>respectivamente.</li>
+                        <li><strong>git branch -d &lt;branch></strong> elimina de forma segura la rama especificada, siempre y cuando sus cambios hayan sido integrados a otra.</li>
+                        <li><strong>git branch -D &lt;branch></strong> elimina de forma forzada la rama indicada, sin importar que los cambios no se hayan integrado en otra.</li>
+                        <li><strong>git push -d &lt;remote> &lt;branch></strong> elimina del repositorio remoto la rama seleccionada.</li>
+                        <li><strong>git merge &lt;branch</strong> integra un nuevo commit que integra los cambios de la rama seleccionada en la rama alctual.</li>
+                    </ul>
                 </p>
             </article>
             <article>
