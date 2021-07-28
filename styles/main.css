@@ -29,6 +29,9 @@
             }
         /*Navigation*/
             nav{
+                position: sticky;
+                top: 0;
+                z-index: 2;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -70,6 +73,15 @@
                     font-size: calc(2vw + .8rem);
                     text-shadow: 0 0 .5rem #eee;
                 }       
+/*Main Content*/
+    main{
+        max-width: 960px;
+        margin: .5rem auto;
+    }
+    main, 
+    footer{
+        padding: 1rem;
+    }
 /*Social Media*/
     .social{
         display: flex;
