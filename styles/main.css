@@ -1,86 +1,100 @@
 /* Content First - Mobile First*/
-    /*General Rules*/
-            *{
-                box-sizing: border-box;
-                font-family: 'Raleway', 'segoe ui', 'calibri', sans-serif;
-            }
-            body,
-            h1,
-            h2,
-            h3,
-            header p,
-            .menu{
-                margin: 0;
-            }
-            .logo{
-                font-size: 1.2rem;
-                font-weight: bold;
-                text-transform: uppercase;
-            }
-            .button{
-                margin: .5rem;
-                border: .1rem solid #eee;
-                color: #eee;
-                background-color: transparent;
-            }
-            .button:hover{
-                color: #448;
-                background-color: #eee;
-            }
-        /*Navigation*/
-            nav{
-                position: sticky;
-                top: 0;
-                z-index: 2;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-wrap: wrap;
-                background: 
-                    #448
-                    linear-gradient(#36c, #448);
-            }
-            nav a{
-                display: block;
-                padding: .5rem;
-                color: #eee;
-                text-decoration: none;
-            }
-            .menu{
-                width: 100%;
-                max-height: 0;
-                padding: 0;
-                list-style: none;
-                overflow: hidden;
-                transition: all .5s ease;
-            }
-            .menu a:hover{
-                background-color: #3338;
-            }
-            .menu.active{
-                max-height: 600px;
-            }
-            /*Header*/
-                header{
-                    display: grid;
-                    justify-content: center;
-                    align-content: center;
-                    height: 100vh; /*Alto viewport*/
-                    max-height: 600px;
-                    color: #eee;
-                    background-color: #333;
-                    text-align: center;
-                    font-size: calc(2vw + .8rem);
-                    text-shadow: 0 0 .5rem #eee;
-                }       
-/*Main Content*/
-    main{
-        max-width: 960px;
-        margin: .5rem auto;
+/*General Rules*/
+    *{
+        box-sizing: border-box;
+        font-family: 'Raleway', 'segoe ui', 'calibri', sans-serif;
     }
-    main, 
+    body,
+    h1,
+    h2,
+    h3,
+    header p,
+    .menu{
+        margin: 0;
+    }
+    .logo{
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .button{
+        margin: .5rem;
+        border: .1rem solid #eee;
+        color: #eee;
+        background-color: transparent;
+    }
+    .button:hover{
+        color: #448;
+        background-color: #eee;
+    }
+/*Navigation*/
+    nav{
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background: 
+            #448
+            linear-gradient(#36c, #448);
+    }
+    nav a{
+        display: block;
+        padding: .5rem;
+        color: #eee;
+        text-decoration: none;
+    }
+    .menu{
+        width: 100%;
+        max-height: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        transition: all .5s ease;
+    }
+    .menu a:hover{
+        background-color: #3338;
+    }
+    .menu.active{
+        max-height: 600px;
+    }
+/*Header*/
+    header{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        height: 100vh; /*Alto viewport*/
+        max-height: 600px;
+        color: #eee;
+        background-color: #333;
+        text-align: center;
+        font-size: calc(2vw + .8rem);
+        text-shadow: 0 0 .5rem #eee;
+    }       
+/*Main Content*/
+    main,
     footer{
         padding: 1rem;
+    }
+    section{
+        margin: 1rem auto;
+        border-radius: .25rem;
+        padding: 1rem;
+        box-shadow: 0 0 .5rem #333;
+    }
+    section h2{
+        border-bottom: .1rem solid #999;
+    }
+    .commands{
+        margin: 1rem;
+        margin-left: 2.5rem;
+        border-left: .25rem solid #448;
+        padding: 1rem;
+        background-color: #eee;
+        line-height: 1.5rem;
+        list-style: none;
     }
 /*Social Media*/
     .social{
@@ -123,10 +137,15 @@
     tr:nth-child(even){background-color: #4482;}
             
 /*Small Devices - Smartphones*/
-
+    @media screen and (min-width: 576px){
+    /*Main Content*/
+        Section{
+            max-width: 540px;
+        }
+    }
 /*Medium Devices - Tablets*/
     @media screen and (min-width: 768px){
-        /*Navigation*/
+    /*Navigation*/
         nav .button{
             display: none;
         }
@@ -135,9 +154,18 @@
             width: auto;
             max-height: 600px;
         }
+    /*Main Content*/
+    Section{
+        max-width: 720px;
     }
+}
 /*large Devices - Desktop*/
-
+    @media screen and (min-width:992px){
+    /*Main Content*/
+        Section{
+            max-width: 960px;
+        }
+    }
 /*ExtraLarge - HD Desktop*/
     @media screen and (min-width: 1200px){
     /*Navigation*/
