@@ -143,6 +143,12 @@
                     Comando que genera un nuevo commit realizando la opereración contraria del commit del cual apunta; si no existen conflictos, el mensaje del mismo será algo como <em>"revert 'commit message'"</em> para poder identificar qué commit estamos deshaciendo. Esto es ideal para revertir commits que ya fueron subidos al repositorio y no deberíamos borrar con <em>git reset</em>.
                 </P>
             </article>
+            <article>
+                <h3>BISECT</h3>
+                <p>
+                    Comando que permite el análisis binario de commits, se utiliza cuando se detecta un conjunto de cambios no deseados y no se identifica en qué confirmación fueron introducidos. Lo que hace esta herramienta, con la guía del usuario es marcar los commits funcionales donde el código no presentaba problemas y también marcar los commits problemáticos (aquellos donde el código no funciona como debería) para identificar dónde se generó el inconveniente.
+                </p>
+            </article>
         </section>
     </main>
     <footer id="footer">
