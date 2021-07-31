@@ -137,6 +137,12 @@
                     Comando que permite la eliminación de commits del historial de adelante para atrás, e incluso el restablecimiento del Working Directory. Se utiliza para deshacer cambios dentro del proyecto o reemitir commits de una manera más organizada, cuando los cambios aún no fueron subidos al repositorio remoto.
                 </P>
             </article>
+            <article>
+                <h3>REVERT</h3>
+                <P>
+                    Comando que genera un nuevo commit realizando la opereración contraria del commit del cual apunta; si no existen conflictos, el mensaje del mismo será algo como <em>"revert 'commit message'"</em> para poder identificar qué commit estamos deshaciendo. Esto es ideal para revertir commits que ya fueron subidos al repositorio y no deberíamos borrar con <em>git reset</em>.
+                </P>
+            </article>
         </section>
     </main>
     <footer id="footer">
