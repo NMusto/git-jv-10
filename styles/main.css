@@ -96,6 +96,35 @@
         line-height: 1.5rem;
         list-style: none;
     }
+/*Footer*/
+    #footer{
+        position: relative;
+        padding: 1rem;
+    }
+    .bg-content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        z-index: -1;
+        opacity: .9;
+    }
+    .bg-content.active{
+        position: fixed;
+        z-index: 2;
+    }
+    #footer .top{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    #footer .top.active{
+        position: fixed;
+        z-index: 3;
+    }
 /*Social Media*/
     .social{
         display: flex;
@@ -119,7 +148,7 @@
         margin: 1rem auto;
         border-collapse: collapse;
         color: #eee;
-        background: linear-gradient(#36c3,#4483);
+        background: #eee linear-gradient(#36c3,#4483);
     }       
     caption{
         border-radius: .25rem .25rem 0 0 ;
