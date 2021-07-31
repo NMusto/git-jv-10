@@ -136,12 +136,23 @@
                 <P>
                     Comando que permite la eliminación de commits del historial de adelante para atrás, e incluso el restablecimiento del Working Directory. Se utiliza para deshacer cambios dentro del proyecto o reemitir commits de una manera más organizada, cuando los cambios aún no fueron subidos al repositorio remoto.
                 </P>
+                <ul class="commands">
+                    <li><strong>git reset &lt;ref> </strong> Elimina los commits del historial hasta donde se encuentra el seleccionado</li>
+                    <li><strong>git reset --mixed &lt;ref> </strong>Elimina los commits y reestablece el INDEX, manteniendo los cambios agregados</li>
+                    <li><strong>git reset --hard&lt;ref> </strong> Reestablece el proyecto por completo hasta el commit indicado</li>
+                    <li><strong>git reset &lt;ref> --&lt;file> </strong> Quita del INDEX los cambios seleccionados</li>
+                </ul>
             </article>
             <article>
                 <h3>REVERT</h3>
                 <P>
                     Comando que genera un nuevo commit realizando la opereración contraria del commit del cual apunta; si no existen conflictos, el mensaje del mismo será algo como <em>"revert 'commit message'"</em> para poder identificar qué commit estamos deshaciendo. Esto es ideal para revertir commits que ya fueron subidos al repositorio y no deberíamos borrar con <em>git reset</em>.
                 </P>
+                <ul class="commands">
+                    <li><strog>git revert &lt;ref></strog> Genera un commit que deshace los cambios de la confirmación seleccionada</li>
+                    <li><strog>git revert --abort</strog> En caso de conflicto cancela la reversión de los cambios</li>
+                    <li><strog>git revert --continue</strog> Cuando se resuelvió el conflicto y se agregaron los cambios, continua con la operación</li>
+                </ul>
             </article>
             <article>
                 <h3>BISECT</h3>
