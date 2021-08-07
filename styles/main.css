@@ -116,10 +116,15 @@
         z-index: 2;
     }
     #footer .top{
+        background-color: #333;
         position: absolute;
         top: 0;
         right: 0;
         z-index: 1;
+    }
+    #footer .top:hover{
+        border-color: #999;
+        background-color: #999;
     }
     #footer .top.active{
         position: fixed;

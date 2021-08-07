@@ -159,6 +159,12 @@
                 <p>
                     Comando que permite el análisis binario de commits, se utiliza cuando se detecta un conjunto de cambios no deseados y no se identifica en qué confirmación fueron introducidos. Lo que hace esta herramienta, con la guía del usuario es marcar los commits funcionales donde el código no presentaba problemas y también marcar los commits problemáticos (aquellos donde el código no funciona como debería) para identificar dónde se generó el inconveniente.
                 </p>
+                <ul class="commands">
+                    <li><strong>git bisect start</strong> Comienza con el análisis de los commits</li>
+                    <li><strong>git bisect bad</strong> Indica al commit actual como no funcional</li>
+                    <li><strong>git bisect good</strong> Indica al commit actual como válido</li>
+                    <li><strong>git bisect reset</strong> Finaliza el análisis de commits</li>
+                </ul>
             </article>
         </section>
     </main>
